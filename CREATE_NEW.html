@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React + Vite Setup Guide</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px">
+  <h1>React + Vite Setup Guide</h1>
+  <p>
+    Alright — let’s go step-by-step and get you a fresh
+    <strong>React</strong> project running with <strong>Vite</strong> from
+    scratch. We’ll use the modern way (fast, minimal, and no unnecessary
+    installs).
+  </p>
+
+  <hr />
+
+  <h2>1️⃣ Install Node.js</h2>
+  <p>If you don’t already have Node.js:</p>
+  <ul>
+    <li>
+      Download from:
+      <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>
+    </li>
+    <li>Install the <strong>LTS</strong> version.</li>
+    <li>After install, check:</li>
+  </ul>
+  <pre><code>node -v npm -v</code></pre>
+  <hr />
+
+  <h2>2️⃣ Create a New React Project with Vite</h2>
+  <p>In your terminal:</p>
+  <pre><code>npm create vite@latest my-react-app
+    </code></pre>
+  <p>It will ask you:</p>
+  <ul>
+    <li><strong>Project name?</strong> → Press Enter or type your name.</li>
+    <li>
+      <strong>Select a framework</strong> → Choose <strong>React</strong> (or
+      React + TypeScript if you prefer TS).
+    </li>
+    <li>
+      <strong>Variant</strong> → Choose <strong>JavaScript</strong> or
+      <strong>TypeScript</strong>.
+    </li>
+  </ul>
+
+  <hr />
+
+  <h2>3️⃣ Go into Your Project</h2>
+  <pre><code>cd my-react-app
+    </code></pre>
+
+  <hr />
+
+  <h2>4️⃣ Install Dependencies</h2>
+  <pre><code>npm install
+    </code></pre>
+
+  <hr />
+
+  <h2>5️⃣ Start the Development Server</h2>
+  <pre><code>npm run dev
+    </code></pre>
+  <p>It will show something like:</p>
+  <pre><code>Local: http://localhost:5173/
+    </code></pre>
+  <p>Open that link in your browser.</p>
+
+  <hr />
+
+  <h2>6️⃣ Project Structure (Basic)</h2>
+  <pre><code>my-react-app/
+  ├── public/        # static files
+  ├── src/           # your React code
+  │   ├── App.jsx    # main app component
+  │   └── main.jsx   # entry point
+  ├── package.json   # dependencies and scripts
+  ├── vite.config.js # vite settings
+    </code></pre>
+
+  <hr />
+
+  <h2>7️⃣ To Stop the Server</h2>
+  <p>Press <strong>Ctrl + C</strong> in the terminal.</p>
+
+  <hr />
+
+  <p>
+    <em>If you want, I can give you a full ready-to-run command block so you
+      just paste it and it makes your project without answering prompts.</em>
+  </p>
+</body>
+
+</html>

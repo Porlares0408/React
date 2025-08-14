@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Git Basics Cheat Sheet + GitHub Setup</title>
+</head>
+
+<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px">
+    <h1>Git Basics Cheat Sheet + GitHub Setup</h1>
+    <p>
+        A quick reference for common Git commands, including initializing a repository,
+        tracking changes, committing, and pushing to GitHub.
+    </p>
+
+    <hr />
+
+    <h2>1️⃣ Start Git in a Folder</h2>
+    <pre><code>git init</code></pre>
+    <p><em>// Initializes a new Git repository in the current folder</em></p>
+
+    <hr />
+
+    <h2>2️⃣ Set the Branch Name to <code>main</code></h2>
+    <pre><code>git branch -M main</code></pre>
+    <p><em>// Renames the current branch to 'main'</em></p>
+
+    <hr />
+
+    <h2>3️⃣ View Status (see what has changed)</h2>
+    <pre><code>git status</code></pre>
+    <p><em>// Shows untracked, modified, or staged files</em></p>
+
+    <hr />
+
+    <h2>4️⃣ Restore Changes</h2>
+    <ul>
+        <li>Restore <strong>all</strong> changes:
+            <pre><code>git restore .</code></pre>
+            <p><em>// Reverts all changes in the working directory</em></p>
+        </li>
+        <li>Restore a <strong>specific</strong> file:
+            <pre><code>git restore MyFile.cs</code></pre>
+            <p><em>// Reverts a specific file to the last committed state</em></p>
+        </li>
+        <li>Restore <strong>multiple specific</strong> files:
+            <pre><code>git restore File1.cs File2.cs</code></pre>
+            <p><em>// Reverts multiple files to the last committed state</em></p>
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2>5️⃣ Add Changes (stage files for commit)</h2>
+    <ul>
+        <li>Add <strong>all</strong> files:
+            <pre><code>git add .</code></pre>
+            <p><em>// Stages all changes for commit</em></p>
+        </li>
+        <li>Add a <strong>specific</strong> file:
+            <pre><code>git add MyFile.cs</code></pre>
+            <p><em>// Stages a single file for commit</em></p>
+        </li>
+        <li>Add <strong>multiple specific</strong> files:
+            <pre><code>git add File1.cs File2.cs</code></pre>
+            <p><em>// Stages multiple files for commit</em></p>
+        </li>
+    </ul>
+
+    <hr />
+
+    <h2>6️⃣ Commit Changes</h2>
+    <pre><code>git commit -m "Your commit message here"</code></pre>
+    <p><em>// Saves staged changes with a descriptive message</em></p>
+
+    <hr />
+
+    <h2>7️⃣ Peek at an Old Commit (temporary view)</h2>
+    <pre><code>git checkout &lt;commit-hash&gt;</code></pre>
+    <p>Example:</p>
+    <pre><code>git checkout 1b16ef30b459d826097e43138b48727cf77cf627</code></pre>
+    <p><em>// Switches to a specific commit without changing the current branch</em></p>
+
+    <hr />
+
+    <h2>8️⃣ Return to Your Current Work (main branch)</h2>
+    <pre><code>git checkout main</code></pre>
+    <p><em>// Returns to the main branch</em></p>
+
+    <hr />
+
+    <h2>9️⃣ Create a New Repository on GitHub from Command Line</h2>
+    <pre><code>echo "# Learning_React" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Porlares0408/Learning_React.git
+git push -u origin main</code></pre>
+    <p><em>// Creates README, initializes repo, commits, sets main branch, links to GitHub, and pushes</em></p>
+
+    <hr />
+
+    <h2>🔟 Push an Existing Repository to GitHub</h2>
+    <pre><code>git remote add origin https://github.com/Porlares0408/Learning_React.git
+git branch -M main
+git push -u origin main</code></pre>
+    <p><em>// Links your existing local repository to GitHub and pushes the main branch</em></p>
+
+</body>
+
+</html>
