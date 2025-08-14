@@ -1,10 +1,19 @@
-.Student {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 2em;
+.welcome-message {
+  border: 1px solid black;
+  margin: 0px;
+  width: fit-content;
   padding: 10px;
-  border: 1px solid hsla(0, 0%, 50%, 0.8);
+  border-radius: 10px;
+  background-color: rgb(252, 251, 251);
+  cursor: pointer;
+  transition: box-shadow 0.5s, border-color 0.9s;
 }
 
-.Student p {
-  margin: 0;
+.welcome-message:hover {
+  border-color: transparent; /* instead of border: none */
+  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);
+}
+
+.welcome-message:active {
+  color: red;
 }
