@@ -1,19 +1,27 @@
-.welcome-message {
-  border: 1px solid black;
-  margin: 0px;
-  width: fit-content;
-  padding: 10px;
+.Container {
+  border: 1px solid transparent;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  background-color: rgb(252, 251, 251);
+  text-align: center;
+  width: 200px;
+}
+
+.Container :hover {
+  background-color: antiquewhite;
+}
+.Container h1 {
+  border: 1px solid rgb(228, 228, 228);
+}
+
+.Container h1,
+.Container ol {
+  margin: 0;
+  padding: 0;
   cursor: pointer;
-  transition: box-shadow 0.5s, border-color 0.9s;
 }
 
-.welcome-message:hover {
-  border-color: transparent; /* instead of border: none */
-  box-shadow: 0 0px 10px 0 rgba(0, 0, 0, 0.19);
-}
-
-.welcome-message:active {
-  color: red;
+.Container ol {
+  word-wrap: break-word; /* Legacy, still works in many browsers */
+  overflow-wrap: break-word; /* Modern, standard property */
 }
