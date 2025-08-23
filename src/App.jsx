@@ -1,11 +1,16 @@
-// Click Event
-import Button from "./Button";
-import Profilepic from "./ProfilePicture";
+import Counter from "./Counter";
+import MyComponent from "./MyComponent";
 function App() {
   return (
     <>
-      {/* <Button /> Just unComment this line to see the button in action    */}
-      <Profilepic />
+      <div className="Container-main">
+        <div className="Container-1">
+          <MyComponent />
+        </div>
+        <div className="Container-2">
+          <Counter />
+        </div>
+      </div>
     </>
   );
 }
